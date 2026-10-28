@@ -1,0 +1,15 @@
+# Qwen Model Evaluation Configuration for Resonance
+model:
+  name_or_path: "Qwen/Qwen2.5-0.5B-Instruct"
+  mode: "non-thinking"
+  device: "auto"
+  max_new_tokens: 512
+  temperature: 0.7
+  top_p: 0.8
+  top_k: 20
+
+evaluation:
+  split: "dev"
+  num_episodes: 10
+  base_seed: 1000
+  output_dir: "artifacts/model_eval_qwen"

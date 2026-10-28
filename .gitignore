@@ -1,0 +1,39 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.DS_Store
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Logs and caches
+*.log
+.pytest_cache/
+.mypy_cache/
+test_clone/
+
+# Secrets, credentials, and environment files
+.env*
+*.pem
+*.key
+*.crt
+*.cert
+*.p12
+*.pfx
+*.secret
+credentials.json
+secrets.json
+*id_rsa*
+*id_ed25519*
+*.token
+dist/
+build/
+
+# Externalized model weights (download via scripts/download_checkpoints.py)
+*.safetensors
+*.bin

@@ -1,0 +1,23 @@
+{
+  "total_episodes": 50,
+  "submitted_episodes": 0,
+  "submission_rate": 0.0,
+  "mean_terminal_reward": -0.04999999999999999,
+  "terminal_reward_std": 1.3877787807814457e-17,
+  "mean_episode_return": -0.25,
+  "episode_return_std": 0.0,
+  "mean_reward": -0.04999999999999999,
+  "reward_std": 1.3877787807814457e-17,
+  "unconditional_type_accuracy": 0.0,
+  "conditional_mean_nrmse": null,
+  "conditional_mean_brier_score": null,
+  "type_classification_accuracy": 0.0,
+  "mean_nrmse": null,
+  "mean_brier_score": null,
+  "mean_valid_action_rate": 0.0,
+  "mean_instrument_calls": 0.0,
+  "mean_turn_steps": 5.0,
+  "failure_counts": {
+    "budget_overrun": 50
+  }
+}

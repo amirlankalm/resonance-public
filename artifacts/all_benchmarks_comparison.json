@@ -1,0 +1,233 @@
+{
+  "timestamp": "2026-10-25T13:24:51Z",
+  "base_model": {
+    "model_label": "Qwen2.5-0.5B (Before RL / Base)",
+    "model_path": "Qwen/Qwen2.5-0.5B-Instruct",
+    "benchmarks": {
+      "ugphysics": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 15,
+        "domain_breakdown": {
+          "Classical Mechanics": {
+            "correct": 0,
+            "total": 3,
+            "accuracy": 0.0
+          },
+          "Electromagnetism": {
+            "correct": 0,
+            "total": 3,
+            "accuracy": 0.0
+          },
+          "Quantum Mechanics": {
+            "correct": 0,
+            "total": 3,
+            "accuracy": 0.0
+          },
+          "Thermodynamics": {
+            "correct": 0,
+            "total": 3,
+            "accuracy": 0.0
+          },
+          "Optics": {
+            "correct": 0,
+            "total": 3,
+            "accuracy": 0.0
+          }
+        },
+        "elapsed_sec": 83.81
+      },
+      "phys_reason": {
+        "accuracy": 0.1,
+        "correct": 1,
+        "total": 10,
+        "difficulty_breakdown": {
+          "Easy": {
+            "correct": 1,
+            "total": 3,
+            "accuracy": 0.3333333333333333
+          },
+          "Medium": {
+            "correct": 0,
+            "total": 4,
+            "accuracy": 0.0
+          },
+          "Hard": {
+            "correct": 0,
+            "total": 3,
+            "accuracy": 0.0
+          }
+        },
+        "elapsed_sec": 65.53
+      },
+      "physics_verified": {
+        "accuracy": 0.125,
+        "correct": 1,
+        "total": 8,
+        "domain_breakdown": {
+          "Relativistic Electrodynamics": {
+            "correct": 0,
+            "total": 1,
+            "accuracy": 0.0
+          },
+          "Relativistic Mechanics": {
+            "correct": 1,
+            "total": 1,
+            "accuracy": 1.0
+          },
+          "Classical Electrodynamics": {
+            "correct": 0,
+            "total": 2,
+            "accuracy": 0.0
+          },
+          "Quantum Mechanics": {
+            "correct": 0,
+            "total": 2,
+            "accuracy": 0.0
+          },
+          "Statistical Mechanics": {
+            "correct": 0,
+            "total": 2,
+            "accuracy": 0.0
+          }
+        },
+        "elapsed_sec": 46.69
+      },
+      "boxing_gym": {
+        "mean_nrmse": 0.3506,
+        "mean_reward": 0.6494,
+        "episodes": 2,
+        "elapsed_sec": 20.74
+      },
+      "llm_srbench": {
+        "accuracy": 0.16666666666666666,
+        "correct": 1,
+        "total": 6,
+        "elapsed_sec": 1.72
+      },
+      "resonance_active_circuit": {
+        "mean_reward": -0.05,
+        "mean_nrmse": 1.0,
+        "type_accuracy": 0.0,
+        "budget_overrun_rate": 0.0,
+        "episodes": 5,
+        "elapsed_sec": 59.77
+      }
+    }
+  },
+  "rl_model": {
+    "model_label": "Qwen2.5-0.5B (After Resonance RL)",
+    "model_path": "checkpoints/resonance_qwen_rl",
+    "benchmarks": {
+      "ugphysics": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 15,
+        "domain_breakdown": {
+          "Classical Mechanics": {
+            "correct": 0,
+            "total": 3,
+            "accuracy": 0.0
+          },
+          "Electromagnetism": {
+            "correct": 0,
+            "total": 3,
+            "accuracy": 0.0
+          },
+          "Quantum Mechanics": {
+            "correct": 0,
+            "total": 3,
+            "accuracy": 0.0
+          },
+          "Thermodynamics": {
+            "correct": 0,
+            "total": 3,
+            "accuracy": 0.0
+          },
+          "Optics": {
+            "correct": 0,
+            "total": 3,
+            "accuracy": 0.0
+          }
+        },
+        "elapsed_sec": 94.93
+      },
+      "phys_reason": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 10,
+        "difficulty_breakdown": {
+          "Easy": {
+            "correct": 0,
+            "total": 3,
+            "accuracy": 0.0
+          },
+          "Medium": {
+            "correct": 0,
+            "total": 4,
+            "accuracy": 0.0
+          },
+          "Hard": {
+            "correct": 0,
+            "total": 3,
+            "accuracy": 0.0
+          }
+        },
+        "elapsed_sec": 345.27
+      },
+      "physics_verified": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 8,
+        "domain_breakdown": {
+          "Relativistic Electrodynamics": {
+            "correct": 0,
+            "total": 1,
+            "accuracy": 0.0
+          },
+          "Relativistic Mechanics": {
+            "correct": 0,
+            "total": 1,
+            "accuracy": 0.0
+          },
+          "Classical Electrodynamics": {
+            "correct": 0,
+            "total": 2,
+            "accuracy": 0.0
+          },
+          "Quantum Mechanics": {
+            "correct": 0,
+            "total": 2,
+            "accuracy": 0.0
+          },
+          "Statistical Mechanics": {
+            "correct": 0,
+            "total": 2,
+            "accuracy": 0.0
+          }
+        },
+        "elapsed_sec": 30.58
+      },
+      "boxing_gym": {
+        "mean_nrmse": 0.3462,
+        "mean_reward": 0.6538,
+        "episodes": 2,
+        "elapsed_sec": 22.07
+      },
+      "llm_srbench": {
+        "accuracy": 0.6666666666666666,
+        "correct": 4,
+        "total": 6,
+        "elapsed_sec": 1.87
+      },
+      "resonance_active_circuit": {
+        "mean_reward": 0.676,
+        "mean_nrmse": 0.3616,
+        "type_accuracy": 0.8,
+        "budget_overrun_rate": 1.0,
+        "episodes": 5,
+        "elapsed_sec": 78.41
+      }
+    }
+  }
+}

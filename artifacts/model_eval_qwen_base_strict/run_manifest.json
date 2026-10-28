@@ -1,0 +1,30 @@
+{
+  "experiment_name": "unified_eval_Qwen2.5-0.5B (Frozen Base)_strict",
+  "task_name": "circuit_spectroscopy",
+  "model_name": "Qwen/Qwen2.5-0.5B-Instruct",
+  "mode": "strict",
+  "is_mock": false,
+  "git_commit": "b4174fe68f60c90731bdd235b3fdb42ae21d3663",
+  "checkpoint_hash": null,
+  "system_prompt": "Active circuit spectroscopy evaluation",
+  "decoding_params": {
+    "temperature": 0.7,
+    "top_p": 0.8
+  },
+  "prompt_length_chars": 38,
+  "software_versions": {
+    "python": "3.12.8",
+    "system": "Darwin",
+    "machine": "arm64",
+    "torch": "2.14.1",
+    "transformers": "5.14.1",
+    "peft": "0.20.0",
+    "pydantic": "2.12.5",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "psutil": "7.2.2"
+  },
+  "total_episodes": 50,
+  "elapsed_seconds": 97.712,
+  "timestamp": "2026-10-26T07:34:19Z"
+}

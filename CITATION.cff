@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use Resonance in your research, please cite it as below."
+authors:
+  - name: "Harriot Resonance Team"
+title: "Resonance: Reinforcement Learning & Active Experimentation Environment for Scientific Physics Reasoning"
+version: 0.1.0
+date-released: 2026-10-27
+url: "https://github.com/amirlankalm/resonance"
+keywords:
+  - "reinforcement learning"
+  - "physics"
+  - "active experimentation"
+  - "spectroscopy"
+  - "scientific reasoning"
+  - "gymnasium"
+license: MIT

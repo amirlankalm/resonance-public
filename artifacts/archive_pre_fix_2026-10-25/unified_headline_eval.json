@@ -1,0 +1,2364 @@
+{
+  "num_worlds": 10,
+  "base_seed": 10000,
+  "eig_teacher": {
+    "name": "Sequential EIG Baseline (Teacher)",
+    "model_path": "numerical_eig_teacher",
+    "worlds": 10,
+    "reward": {
+      "mean": 0.9640789461698521,
+      "ci_low": 0.959617243904875,
+      "ci_high": 0.967957845324434
+    },
+    "nrmse": {
+      "mean": 0.018201738062310298,
+      "ci_low": 0.011736892349372289,
+      "ci_high": 0.025637904784401824
+    },
+    "brier_score": {
+      "mean": 5.4963808579375664e-08,
+      "ci_low": 1.3364078273805383e-10,
+      "ci_high": 1.5244553622814467e-07
+    },
+    "type_acc": {
+      "mean": 1.0,
+      "ci_low": 1.0,
+      "ci_high": 1.0
+    },
+    "mean_calls": 5.0,
+    "episodes": [
+      {
+        "status": "terminated",
+        "rmse": 1.9113475489235437e-05,
+        "nrmse": 0.010220959070725347,
+        "reward": 0.96886742455642,
+        "brier_score": 5.722949734803476e-12,
+        "is_correct_type": true,
+        "calls_made": 5,
+        "steps": 6,
+        "predicted": {
+          "circuit_type": "RC",
+          "R": 52.80764265938284,
+          "L_mH": null,
+          "C_uF": 3.121748108529065
+        },
+        "model_probs": {
+          "RC": 0.9999980555482387,
+          "RL": 8.115853539971754e-07,
+          "RLC": 1.1328664071736786e-06
+        }
+      },
+      {
+        "status": "terminated",
+        "rmse": 1.727737855753201e-05,
+        "nrmse": 0.014835811829856863,
+        "reward": 0.9660985128306224,
+        "brier_score": 3.573177480708365e-10,
+        "is_correct_type": true,
+        "calls_made": 5,
+        "steps": 6,
+        "predicted": {
+          "circuit_type": "RC",
+          "R": 87.39735893701916,
+          "L_mH": null,
+          "C_uF": 5.268196561947412
+        },
+        "model_probs": {
+          "RC": 0.9999856918294918,
+          "RL": 2.1424920376149743e-06,
+          "RLC": 1.2165678470533254e-05
+        }
+      },
+      {
+        "status": "terminated",
+        "rmse": 1.6074350883707624e-05,
+        "nrmse": 0.01659774946170719,
+        "reward": 0.9650412539963262,
+        "brier_score": 4.816332473394605e-07,
+        "is_correct_type": true,
+        "calls_made": 5,
+        "steps": 6,
+        "predicted": {
+          "circuit_type": "RC",
+          "R": 101.28233459589941,
+          "L_mH": null,
+          "C_uF": 9.609183478280256
+        },
+        "model_probs": {
+          "RC": 0.999466496771186,
+          "RL": 0.00010138126548209301,
+          "RLC": 0.000432121963331871
+        }
+      },
+      {
+        "status": "terminated",
+        "rmse": 2.0226810456379436e-05,
+        "nrmse": 0.014987299692428527,
+        "reward": 0.9660076201839355,
+        "brier_score": 3.037302520957925e-12,
+        "is_correct_type": true,
+        "calls_made": 5,
+        "steps": 6,
+        "predicted": {
+          "circuit_type": "RL",
+          "R": 71.90015346089878,
+          "L_mH": 49.47138359345904,
+          "C_uF": null
+        },
+        "model_probs": {
+          "RC": 7.981080190998666e-07,
+          "RL": 0.9999985806916334,
+          "RLC": 6.212003473801706e-07
+        }
+      },
+      {
+        "status": "terminated",
+        "rmse": 2.05176270877027e-05,
+        "nrmse": 0.022669316765439446,
+        "reward": 0.9613984075584822,
+        "brier_score": 1.1911271010645957e-08,
+        "is_correct_type": true,
+        "calls_made": 5,
+        "steps": 6,
+        "predicted": {
+          "circuit_type": "RC",
+          "R": 107.69554395444383,
+          "L_mH": null,
+          "C_uF": 10.093479015452361
+        },
+        "model_probs": {
+          "RC": 0.9999164166219333,
+          "RL": 1.5033518532310278e-05,
+          "RLC": 6.854985953424282e-05
+        }
+      },
+      {
+        "status": "terminated",
+        "rmse": 1.5726153381627103e-05,
+        "nrmse": 0.01918680298100108,
+        "reward": 0.9634879182102963,
+        "brier_score": 5.51476206396522e-12,
+        "is_correct_type": true,
+        "calls_made": 5,
+        "steps": 6,
+        "predicted": {
+          "circuit_type": "RL",
+          "R": 117.35397511457731,
+          "L_mH": 88.02401496865055,
+          "C_uF": null
+        },
+        "model_probs": {
+          "RC": 5.786489573631283e-07,
+          "RL": 0.9999981275599001,
+          "RLC": 1.2937911425522323e-06
+        }
+      },
+      {
+        "status": "terminated",
+        "rmse": 2.8404864036208214e-05,
+        "nrmse": 0.028818989227258576,
+        "reward": 0.9577086064132821,
+        "brier_score": 2.518136720191082e-10,
+        "is_correct_type": true,
+        "calls_made": 5,
+        "steps": 6,
+        "predicted": {
+          "circuit_type": "RL",
+          "R": 95.8180514215057,
+          "L_mH": 100.24768138089897,
+          "C_uF": null
+        },
+        "model_probs": {
+          "RC": 5.865379922383456e-06,
+          "RL": 0.9999870620701724,
+          "RLC": 7.0725499051933926e-06
+        }
+      },
+      {
+        "status": "terminated",
+        "rmse": 3.340922662373009e-05,
+        "nrmse": 0.044687440552928503,
+        "reward": 0.9481875245742974,
+        "brier_score": 5.5469727246312465e-08,
+        "is_correct_type": true,
+        "calls_made": 5,
+        "steps": 6,
+        "predicted": {
+          "circuit_type": "RLC",
+          "R": 141.82570673014177,
+          "L_mH": 69.96715445257294,
+          "C_uF": 1.1620326216966124
+        },
+        "model_probs": {
+          "RC": 0.00011335046170867196,
+          "RL": 7.785587427001378e-05,
+          "RLC": 0.9998087936640213
+        }
+      },
+      {
+        "status": "terminated",
+        "rmse": 6.3884385817118725e-06,
+        "nrmse": 0.0035109889140854046,
+        "reward": 0.9728934066514641,
+        "brier_score": 4.233286619745824e-13,
+        "is_correct_type": true,
+        "calls_made": 5,
+        "steps": 6,
+        "predicted": {
+          "circuit_type": "RL",
+          "R": 54.51608041977406,
+          "L_mH": 20.02786534966144,
+          "C_uF": null
+        },
+        "model_probs": {
+          "RC": 2.950208103277971e-07,
+          "RL": 0.9999994698848743,
+          "RLC": 2.3509431529798522e-07
+        }
+      },
+      {
+        "status": "terminated",
+        "rmse": 2.3458391859958664e-05,
+        "nrmse": 0.006502022127672018,
+        "reward": 0.9710987867233947,
+        "brier_score": 1.0434266049358645e-14,
+        "is_correct_type": true,
+        "calls_made": 5,
+        "steps": 6,
+        "predicted": {
+          "circuit_type": "RLC",
+          "R": 25.977990250810613,
+          "L_mH": 59.62066010915106,
+          "C_uF": 8.222574068526702
+        },
+        "model_probs": {
+          "RC": 2.1650128095413593e-08,
+          "RL": 5.89286956411973e-08,
+          "RLC": 0.9999999194211762
+        }
+      }
+    ]
+  },
+  "base_model": {
+    "name": "Base Qwen-2.5-0.5B (Zero-Shot)",
+    "model_path": "Qwen/Qwen2.5-0.5B-Instruct",
+    "worlds": 10,
+    "reward": {
+      "mean": -0.05,
+      "ci_low": -0.05,
+      "ci_high": -0.05
+    },
+    "nrmse": {
+      "mean": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0
+    },
+    "brier_score": {
+      "mean": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0
+    },
+    "type_acc": {
+      "mean": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0
+    },
+    "mean_calls": 0.0,
+    "episodes": [
+      {
+        "world_id": "dev_world_0",
+        "world_seed": 10000,
+        "steps": 20,
+        "calls_made": 0,
+        "terminated": false,
+        "truncated": true,
+        "reward": -0.05,
+        "nrmse": null,
+        "rmse": null,
+        "brier_score": null,
+        "is_correct_type": null,
+        "failure_category": "budget_overrun",
+        "failure_detail": "Episode truncated at 20 turns without submitting.",
+        "elapsed_seconds": 9.6522,
+        "actions": [
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          }
+        ],
+        "errors": [
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'."
+        ]
+      },
+      {
+        "world_id": "dev_world_1",
+        "world_seed": 10001,
+        "steps": 20,
+        "calls_made": 0,
+        "terminated": false,
+        "truncated": true,
+        "reward": -0.05,
+        "nrmse": null,
+        "rmse": null,
+        "brier_score": null,
+        "is_correct_type": null,
+        "failure_category": "budget_overrun",
+        "failure_detail": "Episode truncated at 20 turns without submitting.",
+        "elapsed_seconds": 9.2465,
+        "actions": [
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          }
+        ],
+        "errors": [
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'."
+        ]
+      },
+      {
+        "world_id": "dev_world_2",
+        "world_seed": 10002,
+        "steps": 20,
+        "calls_made": 0,
+        "terminated": false,
+        "truncated": true,
+        "reward": -0.05,
+        "nrmse": null,
+        "rmse": null,
+        "brier_score": null,
+        "is_correct_type": null,
+        "failure_category": "budget_overrun",
+        "failure_detail": "Episode truncated at 20 turns without submitting.",
+        "elapsed_seconds": 9.2058,
+        "actions": [
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          }
+        ],
+        "errors": [
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'."
+        ]
+      },
+      {
+        "world_id": "dev_world_3",
+        "world_seed": 10003,
+        "steps": 20,
+        "calls_made": 0,
+        "terminated": false,
+        "truncated": true,
+        "reward": -0.05,
+        "nrmse": null,
+        "rmse": null,
+        "brier_score": null,
+        "is_correct_type": null,
+        "failure_category": "budget_overrun",
+        "failure_detail": "Episode truncated at 20 turns without submitting.",
+        "elapsed_seconds": 9.2995,
+        "actions": [
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          }
+        ],
+        "errors": [
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'."
+        ]
+      },
+      {
+        "world_id": "dev_world_4",
+        "world_seed": 10004,
+        "steps": 20,
+        "calls_made": 0,
+        "terminated": false,
+        "truncated": true,
+        "reward": -0.05,
+        "nrmse": null,
+        "rmse": null,
+        "brier_score": null,
+        "is_correct_type": null,
+        "failure_category": "budget_overrun",
+        "failure_detail": "Episode truncated at 20 turns without submitting.",
+        "elapsed_seconds": 9.8504,
+        "actions": [
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          }
+        ],
+        "errors": [
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'."
+        ]
+      },
+      {
+        "world_id": "dev_world_5",
+        "world_seed": 10005,
+        "steps": 20,
+        "calls_made": 0,
+        "terminated": false,
+        "truncated": true,
+        "reward": -0.05,
+        "nrmse": null,
+        "rmse": null,
+        "brier_score": null,
+        "is_correct_type": null,
+        "failure_category": "budget_overrun",
+        "failure_detail": "Episode truncated at 20 turns without submitting.",
+        "elapsed_seconds": 10.4191,
+        "actions": [
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          }
+        ],
+        "errors": [
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'."
+        ]
+      },
+      {
+        "world_id": "dev_world_6",
+        "world_seed": 10006,
+        "steps": 20,
+        "calls_made": 0,
+        "terminated": false,
+        "truncated": true,
+        "reward": -0.05,
+        "nrmse": null,
+        "rmse": null,
+        "brier_score": null,
+        "is_correct_type": null,
+        "failure_category": "budget_overrun",
+        "failure_detail": "Episode truncated at 20 turns without submitting.",
+        "elapsed_seconds": 9.8046,
+        "actions": [
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          }
+        ],
+        "errors": [
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'."
+        ]
+      },
+      {
+        "world_id": "dev_world_7",
+        "world_seed": 10007,
+        "steps": 20,
+        "calls_made": 0,
+        "terminated": false,
+        "truncated": true,
+        "reward": -0.05,
+        "nrmse": null,
+        "rmse": null,
+        "brier_score": null,
+        "is_correct_type": null,
+        "failure_category": "budget_overrun",
+        "failure_detail": "Episode truncated at 20 turns without submitting.",
+        "elapsed_seconds": 10.3112,
+        "actions": [
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          }
+        ],
+        "errors": [
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'."
+        ]
+      },
+      {
+        "world_id": "dev_world_8",
+        "world_seed": 10008,
+        "steps": 20,
+        "calls_made": 0,
+        "terminated": false,
+        "truncated": true,
+        "reward": -0.05,
+        "nrmse": null,
+        "rmse": null,
+        "brier_score": null,
+        "is_correct_type": null,
+        "failure_category": "budget_overrun",
+        "failure_detail": "Episode truncated at 20 turns without submitting.",
+        "elapsed_seconds": 9.7203,
+        "actions": [
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          }
+        ],
+        "errors": [
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'."
+        ]
+      },
+      {
+        "world_id": "dev_world_9",
+        "world_seed": 10009,
+        "steps": 20,
+        "calls_made": 0,
+        "terminated": false,
+        "truncated": true,
+        "reward": -0.05,
+        "nrmse": null,
+        "rmse": null,
+        "brier_score": null,
+        "is_correct_type": null,
+        "failure_category": "budget_overrun",
+        "failure_detail": "Episode truncated at 20 turns without submitting.",
+        "elapsed_seconds": 9.6136,
+        "actions": [
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"measure\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"action\": \"submit\"\n}\n```"
+          }
+        ],
+        "errors": [
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'."
+        ]
+      }
+    ]
+  },
+  "rl_model": {
+    "name": "Resonance RL (Qwen-2.5-0.5B)",
+    "model_path": "checkpoints/resonance_qwen_rl",
+    "worlds": 10,
+    "reward": {
+      "mean": 0.8295870798395241,
+      "ci_low": 0.6329259216925465,
+      "ci_high": 0.9314171786546003
+    },
+    "nrmse": {
+      "mean": 0.02113503733421478,
+      "ci_low": 0.013755513514293582,
+      "ci_high": 0.03333873547442656
+    },
+    "brier_score": {
+      "mean": 2.549012549273396e-17,
+      "ci_low": 2.5490125187621933e-17,
+      "ci_high": 2.5490125696141977e-17
+    },
+    "type_acc": {
+      "mean": 1.0,
+      "ci_low": 1.0,
+      "ci_high": 1.0
+    },
+    "mean_calls": 11.8,
+    "episodes": [
+      {
+        "world_id": "dev_world_0",
+        "world_seed": 10000,
+        "steps": 13,
+        "calls_made": 12,
+        "terminated": true,
+        "truncated": false,
+        "reward": 0.9317361722512061,
+        "nrmse": 0.013773046247989664,
+        "rmse": 2.5755976523480446e-05,
+        "brier_score": 2.5490125696141977e-17,
+        "is_correct_type": true,
+        "failure_category": null,
+        "failure_detail": null,
+        "elapsed_seconds": 16.9485,
+        "actions": [
+          {
+            "type": "measure",
+            "frequency_hz": 30.0
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 30000.0
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 72.73386051246985
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 12373.879148704049
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 13379.879148704049
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 300.0000000000001
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 13379.879148704049
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 300.0000000000001
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 12777.939791794444
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 72.73386051246985
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 12777.939791794444
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 300.0000000000001
+          },
+          {
+            "type": "submit",
+            "model_probs": {
+              "RC": 0.9999999958776926,
+              "RL": 2.061153613941849e-09,
+              "RLC": 2.061153613941849e-09
+            },
+            "parameters": {
+              "circuit_type": "RC",
+              "R": 52.3560934214981,
+              "C_uF": 3.0740233978390825
+            }
+          }
+        ],
+        "errors": []
+      },
+      {
+        "world_id": "dev_world_1",
+        "world_seed": 10001,
+        "steps": 13,
+        "calls_made": 12,
+        "terminated": true,
+        "truncated": false,
+        "reward": 0.9323365951718225,
+        "nrmse": 0.012772341380295687,
+        "rmse": 1.4874317605545456e-05,
+        "brier_score": 2.5490125696141977e-17,
+        "is_correct_type": true,
+        "failure_category": null,
+        "failure_detail": null,
+        "elapsed_seconds": 16.0391,
+        "actions": [
+          {
+            "type": "measure",
+            "frequency_hz": 30.0
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 30000.0
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 72.73386051246985
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 12373.879148704049
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 13379.83979148705
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 17777.777777777777
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 300.0000000000001
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 7277.937794474445
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 13379.83979148705
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 17777.777777777777
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 300.0000000000001
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 13379.83979148705
+          },
+          {
+            "type": "submit",
+            "model_probs": {
+              "RC": 0.9999999958776926,
+              "RL": 2.061153613941849e-09,
+              "RLC": 2.061153613941849e-09
+            },
+            "parameters": {
+              "circuit_type": "RC",
+              "R": 85.79323519477781,
+              "C_uF": 5.389031692223105
+            }
+          }
+        ],
+        "errors": []
+      },
+      {
+        "world_id": "dev_world_2",
+        "world_seed": 10002,
+        "steps": 14,
+        "calls_made": 12,
+        "terminated": true,
+        "truncated": false,
+        "reward": 0.9297049381535929,
+        "nrmse": 0.017158436410678622,
+        "rmse": 1.6617356956577656e-05,
+        "brier_score": 2.5490125696141977e-17,
+        "is_correct_type": true,
+        "failure_category": null,
+        "failure_detail": null,
+        "elapsed_seconds": 17.1667,
+        "actions": [
+          {
+            "type": "measure",
+            "frequency_hz": 30.0
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 30000.0
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 72.73386051246985
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 12373.879148704049
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 13379.879148704049
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 300.0000000000001
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 300.0000000000001
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 11373.979148704058
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 72773.97914870408
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 11374.000000000002
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 300.0000000000001
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 300.0000000000001
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 11374.000000000002
+          },
+          {
+            "type": "submit",
+            "model_probs": {
+              "RC": 0.9999999958776926,
+              "RL": 2.061153613941849e-09,
+              "RLC": 2.061153613941849e-09
+            },
+            "parameters": {
+              "circuit_type": "RC",
+              "R": 101.3095905336216,
+              "C_uF": 9.22165083531802
+            }
+          }
+        ],
+        "errors": [
+          "Frequency 72773.97914870408 Hz out of instrument band [30.0, 30000.0]."
+        ]
+      },
+      {
+        "world_id": "dev_world_3",
+        "world_seed": 10003,
+        "steps": 20,
+        "calls_made": 10,
+        "terminated": false,
+        "truncated": true,
+        "reward": -0.05,
+        "nrmse": null,
+        "rmse": null,
+        "brier_score": null,
+        "is_correct_type": null,
+        "failure_category": "budget_overrun",
+        "failure_detail": "Episode truncated at 20 turns without submitting.",
+        "elapsed_seconds": 30.7426,
+        "actions": [
+          {
+            "type": "measure",
+            "frequency_hz": 30.0
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 30000.0
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 72.73386051246985
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 12373.879148704049
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 12374.779148704049
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 300.0000000000001
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 10337.979148704058
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 300.0000000000001
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 12773.97914870405
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"type\": \"measure\",\n  \"frequency_hz\": 7277.98317111d\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"type\": \"measure\",\n  \"frequency_hz\": 12777.98317111d\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"type\": \"measure\",\n  \"frequency_hz\": 12777.98317111d\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"type\": \"measure\",\n  \"frequency_hz\": 12777.98317111d\n}\n```"
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 300.0000000000001
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"type\": \"measure\",\n  \"frequency_hz\": 7277.98317111d\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"type\": \"measure\",\n  \"frequency_hz\": 12777.98317111d\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"type\": \"measure\",\n  \"frequency_hz\": 12777.98317111d\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"type\": \"measure\",\n  \"frequency_hz\": 12777.98317111d\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"type\": \"measure\",\n  \"frequency_hz\": 7277.98317111d\n}\n```"
+          },
+          {
+            "type": "invalid",
+            "raw": "```json\n{\n  \"type\": \"measure\",\n  \"frequency_hz\": 12777.98317111d\n}\n```"
+          }
+        ],
+        "errors": [
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'.",
+          "Unknown action type: invalid. Expected 'measure' or 'submit'."
+        ]
+      },
+      {
+        "world_id": "dev_world_4",
+        "world_seed": 10004,
+        "steps": 13,
+        "calls_made": 12,
+        "terminated": true,
+        "truncated": false,
+        "reward": 0.931346447897277,
+        "nrmse": 0.014422586837871506,
+        "rmse": 1.3053646982012185e-05,
+        "brier_score": 2.5490125696141977e-17,
+        "is_correct_type": true,
+        "failure_category": null,
+        "failure_detail": null,
+        "elapsed_seconds": 15.653,
+        "actions": [
+          {
+            "type": "measure",
+            "frequency_hz": 30.0
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 30000.0
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 72.73386051246985
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 12373.879148704049
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 12373.97914870405
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 300.0000000000001
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 12374.97914870405
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 12375.97914870405
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 300.0000000000001
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 300.0000000000001
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 12376.97914870405
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 300.0000000000001
+          },
+          {
+            "type": "submit",
+            "model_probs": {
+              "RC": 0.9999999958776926,
+              "RL": 2.061153613941849e-09,
+              "RLC": 2.061153613941849e-09
+            },
+            "parameters": {
+              "circuit_type": "RC",
+              "R": 111.88071015225088,
+              "C_uF": 9.464213258314917
+            }
+          }
+        ],
+        "errors": []
+      },
+      {
+        "world_id": "dev_world_5",
+        "world_seed": 10005,
+        "steps": 15,
+        "calls_made": 12,
+        "terminated": true,
+        "truncated": false,
+        "reward": 0.9306791055542807,
+        "nrmse": 0.015534824076198921,
+        "rmse": 1.2732867816530382e-05,
+        "brier_score": 2.5490125696141977e-17,
+        "is_correct_type": true,
+        "failure_category": null,
+        "failure_detail": null,
+        "elapsed_seconds": 18.9616,
+        "actions": [
+          {
+            "type": "measure",
+            "frequency_hz": 30.0
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 30000.0
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 72.73386051246985
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 12373.879148704049
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 12373.97914870405
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 300.0000000000001
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 12374.000000000002
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 72773.97914870408
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 300.0000000000001
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 72773.97914870408
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 300.0000000000001
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 12374.000000000002
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 300.0000000000001
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 12374.000000000002
+          },
+          {
+            "type": "submit",
+            "model_probs": {
+              "RC": 2.061153613941849e-09,
+              "RL": 0.9999999958776926,
+              "RLC": 2.061153613941849e-09
+            },
+            "parameters": {
+              "circuit_type": "RL",
+              "R": 121.27432661558451,
+              "L_mH": 79.35947696202822
+            }
+          }
+        ],
+        "errors": [
+          "Frequency 72773.97914870408 Hz out of instrument band [30.0, 30000.0].",
+          "Frequency 72773.97914870408 Hz out of instrument band [30.0, 30000.0]."
+        ]
+      },
+      {
+        "world_id": "dev_world_6",
+        "world_seed": 10006,
+        "steps": 14,
+        "calls_made": 12,
+        "terminated": true,
+        "truncated": false,
+        "reward": 0.9268950781432477,
+        "nrmse": 0.02184153642792042,
+        "rmse": 2.1527676341616954e-05,
+        "brier_score": 2.5490125696141977e-17,
+        "is_correct_type": true,
+        "failure_category": null,
+        "failure_detail": null,
+        "elapsed_seconds": 17.1285,
+        "actions": [
+          {
+            "type": "measure",
+            "frequency_hz": 30.0
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 30000.0
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 72.73386051246985
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 12373.879148704049
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 12374.279148704049
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 300.0000000000001
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 10337.979148704058
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 16377.979148704058
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 48753.779148704045
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 72.73386051246987
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 300.0000000000001
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 12378.000000000002
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 16378.000000000002
+          },
+          {
+            "type": "submit",
+            "model_probs": {
+              "RC": 2.061153613941849e-09,
+              "RL": 0.9999999958776926,
+              "RLC": 2.061153613941849e-09
+            },
+            "parameters": {
+              "circuit_type": "RL",
+              "R": 96.86517304981004,
+              "L_mH": 98.41718220760252
+            }
+          }
+        ],
+        "errors": [
+          "Frequency 48753.779148704045 Hz out of instrument band [30.0, 30000.0]."
+        ]
+      },
+      {
+        "world_id": "dev_world_7",
+        "world_seed": 10007,
+        "steps": 13,
+        "calls_made": 12,
+        "terminated": true,
+        "truncated": false,
+        "reward": 0.8990175782009566,
+        "nrmse": 0.06830403633173913,
+        "rmse": 5.1065467184672336e-05,
+        "brier_score": 2.5490124780805902e-17,
+        "is_correct_type": true,
+        "failure_category": null,
+        "failure_detail": null,
+        "elapsed_seconds": 15.1485,
+        "actions": [
+          {
+            "type": "measure",
+            "frequency_hz": 30.0
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 30000.0
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 86.82798374150249
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 12373.879148704049
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 13373.97914870405
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 17377.97914870405
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 27713.77977724285
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 300.0000000000001
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 12373.97914870405
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 7277.987117917979
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 17777.98711791798
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 300.0000000000001
+          },
+          {
+            "type": "submit",
+            "model_probs": {
+              "RC": 2.0611536139418496e-09,
+              "RL": 2.0611536139418496e-09,
+              "RLC": 0.9999999958776928
+            },
+            "parameters": {
+              "circuit_type": "RLC",
+              "R": 114.63025120532264,
+              "L_mH": 84.65277165330026,
+              "C_uF": 1.1532162926858112
+            }
+          }
+        ],
+        "errors": []
+      },
+      {
+        "world_id": "dev_world_8",
+        "world_seed": 10008,
+        "steps": 13,
+        "calls_made": 12,
+        "terminated": true,
+        "truncated": false,
+        "reward": 0.930254040701822,
+        "nrmse": 0.0162432654969633,
+        "rmse": 2.9555520263105404e-05,
+        "brier_score": 2.5490125696141977e-17,
+        "is_correct_type": true,
+        "failure_category": null,
+        "failure_detail": null,
+        "elapsed_seconds": 15.3923,
+        "actions": [
+          {
+            "type": "measure",
+            "frequency_hz": 30.0
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 30000.0
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 72.73386051246985
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 12373.879148704049
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 12373.97914870405
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 16377.931797270448
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 300.0000000000001
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 13379.797011143844
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 7277.931797270449
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 13379.84711111795
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 13379.84711111795
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 13379.84711111795
+          },
+          {
+            "type": "submit",
+            "model_probs": {
+              "RC": 2.061153613941849e-09,
+              "RL": 0.9999999958776926,
+              "RLC": 2.061153613941849e-09
+            },
+            "parameters": {
+              "circuit_type": "RL",
+              "R": 54.09841818160987,
+              "L_mH": 19.086571123160045
+            }
+          }
+        ],
+        "errors": []
+      },
+      {
+        "world_id": "dev_world_9",
+        "world_seed": 10009,
+        "steps": 15,
+        "calls_made": 12,
+        "terminated": true,
+        "truncated": false,
+        "reward": 0.9339008423210344,
+        "nrmse": 0.010165262798275794,
+        "rmse": 3.667485489883928e-05,
+        "brier_score": 2.5490124780805902e-17,
+        "is_correct_type": true,
+        "failure_category": null,
+        "failure_detail": null,
+        "elapsed_seconds": 19.6343,
+        "actions": [
+          {
+            "type": "measure",
+            "frequency_hz": 30.0
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 30000.0
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 72.73386051246985
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 12373.879148704049
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 12374.379148704049
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 16372.93879148705
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 300.0000000000001
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 72773.97914870406
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 12375.43979148705
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 300.0000000000001
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 72773.97914870406
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 12375.43979148705
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 300.0000000000001
+          },
+          {
+            "type": "measure",
+            "frequency_hz": 12375.43979148705
+          },
+          {
+            "type": "submit",
+            "model_probs": {
+              "RC": 2.0611536139418496e-09,
+              "RL": 2.0611536139418496e-09,
+              "RLC": 0.9999999958776928
+            },
+            "parameters": {
+              "circuit_type": "RLC",
+              "R": 25.171065678268178,
+              "L_mH": 58.097363707677054,
+              "C_uF": 8.48952926363723
+            }
+          }
+        ],
+        "errors": [
+          "Frequency 72773.97914870406 Hz out of instrument band [30.0, 30000.0].",
+          "Frequency 72773.97914870406 Hz out of instrument band [30.0, 30000.0]."
+        ]
+      }
+    ]
+  }
+}

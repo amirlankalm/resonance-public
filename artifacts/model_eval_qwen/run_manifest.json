@@ -1,0 +1,20 @@
+{
+  "experiment_name": "qwen_active_circuit_eval",
+  "evaluation_status": "archived_exploratory_prototype_v0.1",
+  "note": "Early exploratory prototype trial (n=5 preliminary holdouts) prior to the 50 locked worlds benchmark protocol.",
+  "task_name": "circuit_spectroscopy",
+  "model_name": "Qwen/Qwen2.5-0.5B-Instruct",
+  "decoding_params": {
+    "temperature": 0.7,
+    "top_p": 0.8
+  },
+  "prompt_length_chars": 38,
+  "software_versions": {
+    "python": "3.12.8",
+    "system": "Darwin",
+    "machine": "arm64"
+  },
+  "total_episodes": 5,
+  "elapsed_seconds": 135.827,
+  "timestamp": "2026-10-24T09:24:52Z"
+}

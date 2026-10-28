@@ -1,0 +1,438 @@
+{
+  "teacher_baseline": {
+    "run_id": "teacher_baseline",
+    "display_name": "Adaptive Disagreement Design (Teacher)",
+    "protocol": "50 locked dev worlds (seeds 10000..10049)",
+    "split": "dev",
+    "seeds": [
+      10000,
+      10049
+    ],
+    "total_assigned_worlds": 50,
+    "reward_version": "reward-v2",
+    "execution_mode": "assisted",
+    "active_probing_behavior": "Variance & boundary tracking",
+    "terminal_action": "Optimal Least-Squares",
+    "solver_used": true,
+    "fit_source": "optimal_numerical_solver",
+    "checkpoint_hash": "N/A (deterministic numerical policy)",
+    "submissions": 50,
+    "submission_rate": 1.0,
+    "budget_overruns": 0,
+    "overrun_rate": 0.0,
+    "stop_reasons": {
+      "submitted": 50
+    },
+    "conditional_denominator_nrmse": "50/50 submitted worlds",
+    "conditional_denominator_brier": "50/50 submitted worlds",
+    "unconditional_denominator_accuracy": "50/50 assigned worlds",
+    "mean_terminal_reward": 0.959183040602293,
+    "terminal_reward_ci_95": [
+      0.9539495566999101,
+      0.963131393919269
+    ],
+    "mean_conditional_nrmse": 0.026360749334669666,
+    "conditional_nrmse_ci_95": [
+      0.019780839908620552,
+      0.035083134316295894
+    ],
+    "mean_conditional_brier": 2.548984526245894e-06,
+    "conditional_brier_ci_95": [
+      4.27175595888573e-07,
+      5.715443750790034e-06
+    ],
+    "unconditional_type_accuracy": 1.0,
+    "type_accuracy_ci_95": [
+      1.0,
+      1.0
+    ],
+    "mean_valid_action_rate": 1.0,
+    "uncertainty_method": "1,000 bootstrap resamples (BCa / percentile 95% CI)",
+    "artifact_paths": [
+      "artifacts/unified_headline_eval.json"
+    ]
+  },
+  "base_model_strict": {
+    "run_id": "base_model_strict",
+    "display_name": "Qwen2.5-0.5B (Frozen Base)",
+    "protocol": "50 locked dev worlds (seeds 10000..10049)",
+    "split": "dev",
+    "seeds": [
+      10000,
+      10049
+    ],
+    "total_assigned_worlds": 50,
+    "reward_version": "reward-v2",
+    "execution_mode": "strict",
+    "active_probing_behavior": "0 valid queries (schema stall)",
+    "terminal_action": "Format error / Abort",
+    "solver_used": false,
+    "fit_source": null,
+    "checkpoint_hash": "Base: Qwen/Qwen2.5-0.5B-Instruct",
+    "submissions": 0,
+    "submission_rate": 0.0,
+    "budget_overruns": 50,
+    "overrun_rate": 1.0,
+    "stop_reasons": {
+      "invalid_action_limit": 50,
+      "turn_horizon": 0
+    },
+    "conditional_denominator_nrmse": "N/A (0/50 submitted)",
+    "conditional_denominator_brier": "N/A (0/50 submitted)",
+    "unconditional_denominator_accuracy": "50/50 assigned worlds",
+    "mean_terminal_reward": -0.04999999999999999,
+    "terminal_reward_ci_95": [
+      -0.04999999999999999,
+      -0.04999999999999999
+    ],
+    "mean_conditional_nrmse": null,
+    "conditional_nrmse_ci_95": null,
+    "mean_conditional_brier": null,
+    "conditional_brier_ci_95": null,
+    "unconditional_type_accuracy": 0.0,
+    "type_accuracy_ci_95": [
+      0.0,
+      0.0
+    ],
+    "mean_valid_action_rate": 0.0,
+    "uncertainty_method": "1,000 bootstrap resamples (percentile 95% CI)",
+    "artifact_paths": [
+      "artifacts/model_eval_qwen_base_strict/episodes.jsonl",
+      "artifacts/unified_headline_eval.json"
+    ]
+  },
+  "sft_model_strict": {
+    "run_id": "sft_model_strict",
+    "display_name": "Qwen2.5-0.5B (Shared Adapter, Pass A)",
+    "protocol": "50 locked dev worlds (seeds 10000..10049)",
+    "split": "dev",
+    "seeds": [
+      10000,
+      10049
+    ],
+    "total_assigned_worlds": 50,
+    "reward_version": "reward-v2",
+    "execution_mode": "strict",
+    "active_probing_behavior": "Structured probes, no solver",
+    "terminal_action": "Abort / Schema truncate",
+    "solver_used": false,
+    "fit_source": null,
+    "checkpoint_hash": "22582b459d3523fc60ba7f7ec3afaf9792ec7b74e336fc75c26c5dcd74d459cd",
+    "submissions": 0,
+    "submission_rate": 0.0,
+    "budget_overruns": 50,
+    "overrun_rate": 1.0,
+    "stop_reasons": {
+      "invalid_action_limit": 49,
+      "turn_horizon": 1
+    },
+    "conditional_denominator_nrmse": "N/A (0/50 submitted)",
+    "conditional_denominator_brier": "N/A (0/50 submitted)",
+    "unconditional_denominator_accuracy": "50/50 assigned worlds",
+    "mean_terminal_reward": -0.04899999999999999,
+    "terminal_reward_ci_95": [
+      -0.04999999999999999,
+      -0.04699999999999999
+    ],
+    "mean_conditional_nrmse": null,
+    "conditional_nrmse_ci_95": null,
+    "mean_conditional_brier": null,
+    "conditional_brier_ci_95": null,
+    "unconditional_type_accuracy": 0.0,
+    "type_accuracy_ci_95": [
+      0.0,
+      0.0
+    ],
+    "mean_valid_action_rate": 0.5848,
+    "uncertainty_method": "1,000 bootstrap resamples (percentile 95% CI)",
+    "artifact_paths": [
+      "artifacts/model_eval_qwen_sft_strict/episodes.jsonl",
+      "artifacts/unified_headline_eval.json"
+    ]
+  },
+  "rl_model_strict": {
+    "run_id": "rl_model_strict",
+    "display_name": "Qwen2.5-0.5B (Shared Adapter, Pass B)",
+    "protocol": "50 locked dev worlds (seeds 10000..10049)",
+    "split": "dev",
+    "seeds": [
+      10000,
+      10049
+    ],
+    "total_assigned_worlds": 50,
+    "reward_version": "reward-v2",
+    "execution_mode": "strict",
+    "active_probing_behavior": "Active probes, no solver",
+    "terminal_action": "Abort / Schema truncate",
+    "solver_used": false,
+    "fit_source": null,
+    "checkpoint_hash": "22582b459d3523fc60ba7f7ec3afaf9792ec7b74e336fc75c26c5dcd74d459cd",
+    "submissions": 0,
+    "submission_rate": 0.0,
+    "budget_overruns": 50,
+    "overrun_rate": 1.0,
+    "stop_reasons": {
+      "invalid_action_limit": 48,
+      "turn_horizon": 2
+    },
+    "conditional_denominator_nrmse": "N/A (0/50 submitted)",
+    "conditional_denominator_brier": "N/A (0/50 submitted)",
+    "unconditional_denominator_accuracy": "50/50 assigned worlds",
+    "mean_terminal_reward": -0.04799999999999999,
+    "terminal_reward_ci_95": [
+      -0.04999999999999999,
+      -0.044000000000000004
+    ],
+    "mean_conditional_nrmse": null,
+    "conditional_nrmse_ci_95": null,
+    "mean_conditional_brier": null,
+    "conditional_brier_ci_95": null,
+    "unconditional_type_accuracy": 0.0,
+    "type_accuracy_ci_95": [
+      0.0,
+      0.0
+    ],
+    "mean_valid_action_rate": 0.5834,
+    "uncertainty_method": "1,000 bootstrap resamples (percentile 95% CI)",
+    "artifact_paths": [
+      "artifacts/model_eval_qwen_rl_strict/episodes.jsonl",
+      "artifacts/unified_headline_eval.json"
+    ]
+  },
+  "base_model_assisted": {
+    "run_id": "base_model_assisted",
+    "display_name": "Qwen2.5-0.5B (Frozen Base)",
+    "protocol": "50 locked dev worlds (seeds 10000..10049)",
+    "split": "dev",
+    "seeds": [
+      10000,
+      10049
+    ],
+    "total_assigned_worlds": 50,
+    "reward_version": "reward-v2",
+    "execution_mode": "assisted",
+    "active_probing_behavior": "0 valid queries (prior fallback)",
+    "terminal_action": "Numerical Prior Guess",
+    "solver_used": true,
+    "fit_source": "numerical_fitter",
+    "checkpoint_hash": "Base: Qwen/Qwen2.5-0.5B-Instruct",
+    "submissions": 50,
+    "submission_rate": 1.0,
+    "budget_overruns": 0,
+    "overrun_rate": 0.0,
+    "stop_reasons": {
+      "submitted": 50
+    },
+    "conditional_denominator_nrmse": "50/50 submitted worlds",
+    "conditional_denominator_brier": "50/50 submitted worlds",
+    "unconditional_denominator_accuracy": "50/50 assigned worlds",
+    "mean_terminal_reward": 0.19999999999999996,
+    "terminal_reward_ci_95": [
+      0.19999999999999996,
+      0.19999999999999996
+    ],
+    "mean_conditional_nrmse": 0.5753420563214753,
+    "conditional_nrmse_ci_95": [
+      0.5104737301648197,
+      0.6388536723765755
+    ],
+    "mean_conditional_brier": 0.6667739999999999,
+    "conditional_brier_ci_95": [
+      0.666534,
+      0.6670140000000001
+    ],
+    "unconditional_type_accuracy": 0.28,
+    "type_accuracy_ci_95": [
+      0.16,
+      0.4
+    ],
+    "mean_valid_action_rate": 0.3333,
+    "uncertainty_method": "1,000 bootstrap resamples (percentile 95% CI)",
+    "artifact_paths": [
+      "artifacts/model_eval_qwen_base/episodes.jsonl",
+      "artifacts/unified_headline_eval.json"
+    ]
+  },
+  "sft_model_assisted": {
+    "run_id": "sft_model_assisted",
+    "display_name": "Qwen2.5-0.5B (Shared Adapter, Pass A)",
+    "protocol": "50 locked dev worlds (seeds 10000..10049)",
+    "split": "dev",
+    "seeds": [
+      10000,
+      10049
+    ],
+    "total_assigned_worlds": 50,
+    "reward_version": "reward-v2",
+    "execution_mode": "assisted",
+    "active_probing_behavior": "Structured probe sampling",
+    "terminal_action": "Calibrated Submission",
+    "solver_used": true,
+    "fit_source": "numerical_fitter",
+    "checkpoint_hash": "22582b459d3523fc60ba7f7ec3afaf9792ec7b74e336fc75c26c5dcd74d459cd",
+    "submissions": 28,
+    "submission_rate": 0.56,
+    "budget_overruns": 22,
+    "overrun_rate": 0.44,
+    "stop_reasons": {
+      "submitted": 28,
+      "invalid_action_limit": 22,
+      "turn_horizon": 0
+    },
+    "conditional_denominator_nrmse": "28/50 submitted worlds only",
+    "conditional_denominator_brier": "28/50 submitted worlds only",
+    "unconditional_denominator_accuracy": "50/50 assigned worlds (28 correct)",
+    "mean_terminal_reward": 0.4832666823497737,
+    "terminal_reward_ci_95": [
+      0.359371372147974,
+      0.6154699053524538
+    ],
+    "mean_conditional_nrmse": 0.09014631171824937,
+    "conditional_nrmse_ci_95": [
+      0.04233879198965829,
+      0.14845466486168096
+    ],
+    "mean_conditional_brier": 0.006644258150843572,
+    "conditional_brier_ci_95": [
+      3.111907243332315e-07,
+      0.016754233876203773
+    ],
+    "unconditional_type_accuracy": 0.56,
+    "type_accuracy_ci_95": [
+      0.42,
+      0.7
+    ],
+    "mean_valid_action_rate": 0.7159,
+    "uncertainty_method": "1,000 bootstrap resamples (percentile 95% CI)",
+    "artifact_paths": [
+      "artifacts/model_eval_qwen_sft/episodes.jsonl",
+      "artifacts/unified_headline_eval.json"
+    ]
+  },
+  "rl_model_assisted": {
+    "run_id": "rl_model_assisted",
+    "display_name": "Qwen2.5-0.5B (Shared Adapter, Pass B)",
+    "protocol": "50 locked dev worlds (seeds 10000..10049)",
+    "split": "dev",
+    "seeds": [
+      10000,
+      10049
+    ],
+    "total_assigned_worlds": 50,
+    "reward_version": "reward-v2",
+    "execution_mode": "assisted",
+    "active_probing_behavior": "Active boundary & peak probes",
+    "terminal_action": "Calibrated Submission",
+    "solver_used": true,
+    "fit_source": "numerical_fitter",
+    "checkpoint_hash": "22582b459d3523fc60ba7f7ec3afaf9792ec7b74e336fc75c26c5dcd74d459cd",
+    "submissions": 23,
+    "submission_rate": 0.46,
+    "budget_overruns": 27,
+    "overrun_rate": 0.54,
+    "stop_reasons": {
+      "submitted": 23,
+      "invalid_action_limit": 27,
+      "turn_horizon": 0
+    },
+    "conditional_denominator_nrmse": "23/50 submitted worlds only",
+    "conditional_denominator_brier": "23/50 submitted worlds only",
+    "unconditional_denominator_accuracy": "50/50 assigned worlds (23 correct)",
+    "mean_terminal_reward": 0.40239721118635186,
+    "terminal_reward_ci_95": [
+      0.262443344238328,
+      0.5367331746716872
+    ],
+    "mean_conditional_nrmse": 0.03298017909642524,
+    "conditional_nrmse_ci_95": [
+      0.022510587994798176,
+      0.04521219397406613
+    ],
+    "mean_conditional_brier": 2.8193808121026586e-06,
+    "conditional_brier_ci_95": [
+      1.0473642727531594e-08,
+      8.02274861142148e-06
+    ],
+    "unconditional_type_accuracy": 0.46,
+    "type_accuracy_ci_95": [
+      0.32,
+      0.6
+    ],
+    "mean_valid_action_rate": 0.6877,
+    "uncertainty_method": "1,000 bootstrap resamples (percentile 95% CI)",
+    "artifact_paths": [
+      "artifacts/model_eval_qwen_rl/episodes.jsonl",
+      "artifacts/unified_headline_eval.json"
+    ]
+  },
+  "qwen_7b_assisted": {
+    "run_id": "qwen_7b_assisted",
+    "display_name": "Qwen2.5-7B-Instruct (Zero-Shot Base)",
+    "protocol": "10 locked dev worlds (seeds 10000..10009)",
+    "split": "dev",
+    "seeds": [
+      10000,
+      10009
+    ],
+    "total_assigned_worlds": 10,
+    "reward_version": "reward-v2",
+    "execution_mode": "assisted",
+    "active_probing_behavior": "Zero measurements / prior fallback",
+    "terminal_action": "Prior Fallback Submission",
+    "solver_used": true,
+    "fit_source": "numerical_fitter",
+    "checkpoint_hash": "Qwen/Qwen2.5-7B-Instruct (ollama:qwen2.5:7b)",
+    "submissions": 10,
+    "submission_rate": 1.0,
+    "budget_overruns": 0,
+    "overrun_rate": 0.0,
+    "stop_reasons": {
+      "submitted": 10
+    },
+    "conditional_denominator_nrmse": "10/10 submitted worlds",
+    "conditional_denominator_brier": "10/10 submitted worlds",
+    "unconditional_denominator_accuracy": "10/10 assigned worlds (2 correct)",
+    "mean_terminal_reward": 0.2,
+    "terminal_reward_ci_95": [
+      0.2,
+      0.2
+    ],
+    "mean_conditional_nrmse": 0.6100293011110149,
+    "conditional_nrmse_ci_95": [
+      0.4955,
+      0.7144
+    ],
+    "mean_conditional_brier": 0.666934,
+    "conditional_brier_ci_95": [
+      0.6667,
+      0.6672
+    ],
+    "unconditional_type_accuracy": 0.2,
+    "type_accuracy_ci_95": [
+      0.0,
+      0.5
+    ],
+    "mean_valid_action_rate": 0.33333333333333337,
+    "uncertainty_method": "1,000 bootstrap resamples (percentile 95% CI)",
+    "artifact_paths": [
+      "artifacts/model_eval_qwen_7b_assisted/episodes.jsonl",
+      "artifacts/model_eval_qwen_7b_assisted/summary.json"
+    ]
+  },
+  "numerical_ladder_200w": {
+    "run_id": "numerical_ladder_200w",
+    "display_name": "Gate B Numerical Ladder (Non-learned baselines)",
+    "protocol": "200 random worlds (seeds 20000..20199), variable query budgets q=0, 3, 6, 9, 12",
+    "split": "random_dev",
+    "seeds": [
+      20000,
+      20199
+    ],
+    "total_assigned_worlds": 200,
+    "reward_version": "reward-v2",
+    "separate_protocol_note": "Evaluates non-learned numerical algorithms across 200 random instances under variable query budgets; distinct protocol from 50-world locked dev evaluation.",
+    "artifact_paths": [
+      "artifacts/numerical_ladder_results.json"
+    ]
+  }
+}

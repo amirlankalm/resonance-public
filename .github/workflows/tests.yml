@@ -1,0 +1,53 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  unittest:
+    name: test (py${{ matrix.python-version }}, ${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+        python-version: ["3.10", "3.11", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip build wheel
+          pip install -r requirements.txt
+          pip install torch --index-url https://download.pytorch.org/whl/cpu || pip install torch
+
+      - name: Build and install package wheel
+        run: |
+          python -m build --wheel
+          pip install dist/*.whl
+
+      - name: One-command smoke run (M7)
+        run: |
+          python -m resonance.smoke
+
+      - name: Diagnostics doctor
+        run: |
+          resonance doctor
+
+      - name: Run full unit test suite
+        run: |
+          python -m unittest discover tests
+
+      - name: Verify README table synchronization
+        run: |
+          python scripts/render_readme_tables.py --check

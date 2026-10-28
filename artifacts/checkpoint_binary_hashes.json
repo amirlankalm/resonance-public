@@ -1,0 +1,29 @@
+{
+  "status": "verified",
+  "verification_type": "binary-byte-rehash",
+  "binaries_present_on_disk": true,
+  "byte_identity_checked": true,
+  "expected_sha256": "22582b459d3523fc60ba7f7ec3afaf9792ec7b74e336fc75c26c5dcd74d459cd",
+  "expected_size_bytes": 8676008,
+  "sft_adapter": {
+    "path": "checkpoints/resonance_qwen_sft/adapter_model.safetensors",
+    "sha256": "22582b459d3523fc60ba7f7ec3afaf9792ec7b74e336fc75c26c5dcd74d459cd",
+    "size_bytes": 8676008,
+    "git_blob_id": "e7fb170edc4ce01a5fd39772d71422a90f3529fb",
+    "matches_expected": true
+  },
+  "rl_adapter": {
+    "path": "checkpoints/resonance_qwen_rl/adapter_model.safetensors",
+    "sha256": "22582b459d3523fc60ba7f7ec3afaf9792ec7b74e336fc75c26c5dcd74d459cd",
+    "size_bytes": 8676008,
+    "git_blob_id": "e7fb170edc4ce01a5fd39772d71422a90f3529fb",
+    "matches_expected": true
+  },
+  "comparison": {
+    "sha256_identical": true,
+    "bytes_identical": true,
+    "git_blob_identical": true,
+    "root_cause_disclosure": "Commit b4174fe initialized the SFT checkpoint directory by copying the adapter from the RL checkpoint directory. Consequently, on-disk adapter_model.safetensors files are byte-for-byte duplicate copies sharing identical weights.",
+    "scientific_interpretation": "Evaluations under SFT Pass A and RL Pass B represent stochastic evaluation passes (T=0.7, top_p=0.8) over the locked 50 dev worlds under a single shared adapter checkpoint. They are not an SFT vs. RL post-training causal ablation."
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "benchmark_name": "Resonance-PhysReasoning-v1",
+  "total_problems": 10,
+  "correct": 0,
+  "accuracy": 0.0,
+  "domain_breakdown": {
+    "Electromagnetism": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 4
+    },
+    "Optics": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 2
+    },
+    "Mechanics": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 2
+    },
+    "Thermodynamics": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 1
+    },
+    "Modern Physics": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 1
+    }
+  },
+  "problem_results": [
+    {
+      "problem_id": "phys_circuit_01",
+      "domain": "Electromagnetism",
+      "subfield": "AC Circuits",
+      "target": 796.0,
+      "predicted": 1.0,
+      "relative_error": 0.9987437185929648,
+      "is_correct": false,
+      "model_response": " Step 1: Calculate the angular frequency \u03c9 using the formula \u03c9 = 2\u03c0f.\nStep 2: Calculate the inductive reactance X_L using the formula X_L = \u03c9L.\nStep 3: Calculate the capacitive reactance X_C using the formula X_C = \u03c9C.\nStep 4: Calculate the total impedance Z using the formula Z = \u221a(X_L^2 + X_C^2).\nS..."
+    },
+    {
+      "problem_id": "phys_circuit_02",
+      "domain": "Electromagnetism",
+      "subfield": "AC Circuits",
+      "target": 4.0,
+      "predicted": 2.0,
+      "relative_error": 0.5,
+      "is_correct": false,
+      "model_response": " Step 1: Calculate the reactance of the capacitor.\nGiven that the drive voltage V_rms = 0.1 V and the resistance R = 25 Ohms, we can calculate the reactance X_c using the formula:\n\nX_c = \u03c9 * R\n\nWhere \u03c9 is the angular frequency given by:\n\n\u03c9 = \u221a(LC)\n\nStep 2: Determine the impedance of the capacitor.\nT..."
+    },
+    {
+      "problem_id": "phys_circuit_03",
+      "domain": "Electromagnetism",
+      "subfield": "AC Circuits",
+      "target": 314.2,
+      "predicted": 0.7,
+      "relative_error": 0.9977721196690007,
+      "is_correct": false,
+      "model_response": " Step 1: Calculate the angular frequency \u03c9.\n\u03c9 = 2\u03c0f\nStep 2: Calculate the inductive reactance X_L using the formula X_L = \u03c9L.\nStep 3: Calculate the impedance Z of the circuit using the formula Z = \u221a(\u03c9^2 - XL).\nStep 4: Calculate the magnitude of the inductive reactance X_L by taking the absolute valu..."
+    },
+    {
+      "problem_id": "phys_circuit_04",
+      "domain": "Electromagnetism",
+      "subfield": "AC Circuits",
+      "target": 2.5,
+      "predicted": 2.0,
+      "relative_error": 0.2,
+      "is_correct": false,
+      "model_response": " Step 1: Calculate the angular frequency \u03c9 using the formula \u03c9 = 2\u03c0f, where f is the frequency.\nStep 2: Calculate the impedance Z of the circuit using the formula Z = \u221a(\u03c9^2 - (L/2\u03c0)^2).\nStep 3: Calculate the quality factor Q using the formula Q = Z/(R * \u03c9).\nStep 4: Substitute the given values into t..."
+    },
+    {
+      "problem_id": "phys_optics_01",
+      "domain": "Optics",
+      "subfield": "Polarization",
+      "target": 25.0,
+      "predicted": 2.0,
+      "relative_error": 0.92,
+      "is_correct": false,
+      "model_response": " Step 1: Understand the given information.\n- Light is unpolarized.\n- First linear polarizer has an angle of 30 degrees with respect to the polarization direction of the unpolarized light.\n- Second linear polarizer has an angle of 60 degrees with respect to the orientation of the first polarizer.\n- T..."
+    },
+    {
+      "problem_id": "phys_optics_02",
+      "domain": "Optics",
+      "subfield": "Interference",
+      "target": 5.0,
+      "predicted": 0.0,
+      "relative_error": 1.0,
+      "is_correct": false,
+      "model_response": " Step 1: Convert the wavelength from nanometers to meters.\nlambda = 500 nm * (1 m / 100,000 nm) = 0.00500078 m\n\nStep 2: Calculate the angular separation between the first and second dark fringes.\ntheta = arcsin(\u03bb / c)\nwhere c is the speed of light in vacuum (3 x 10^8 m/s).\n\nStep 3: Use the formula f..."
+    },
+    {
+      "problem_id": "phys_mechanics_01",
+      "domain": "Mechanics",
+      "subfield": "Oscillations",
+      "target": 3.18,
+      "predicted": 0.05,
+      "relative_error": 0.9842767295597484,
+      "is_correct": false,
+      "model_response": " Step 1: Understand the given information\n- Mass of the block, m = 0.5 kg\n- Spring constant, k = 200 N/m\n\nStep 2: Recall the formula for the natural oscillation frequency of a mass-spring system\nThe natural oscillation frequency, f, can be calculated using the formula:\nf = 1 / sqrt(k/m)\n\nStep 3: Plu..."
+    },
+    {
+      "problem_id": "phys_mechanics_02",
+      "domain": "Mechanics",
+      "subfield": "Energy Conservation",
+      "target": 3.96,
+      "predicted": 7.0,
+      "relative_error": 0.7676767676767677,
+      "is_correct": false,
+      "model_response": " Step 1: Calculate the potential energy (PE) of the pendulum bob.\nThe potential energy is given by the formula PE = mgh, where m is the mass of the pendulum bob, g is the acceleration due to gravity, and h is the height above the lowest point.\n\nStep 2: Substitute the values into the formula.\nm = 0.2..."
+    },
+    {
+      "problem_id": "phys_thermo_01",
+      "domain": "Thermodynamics",
+      "subfield": "Heat Engines",
+      "target": 50.0,
+      "predicted": 6.0,
+      "relative_error": 0.88,
+      "is_correct": false,
+      "model_response": " Step 1: Calculate the ratio of temperatures\nThe ratio of temperatures, r, can be calculated using the formula:\n\nr = T_H / T_C\n\nStep 2: Substitute the given values into the formula\nSubstitute T_H = 600 K and T_C = 300 K into the formula:\n\nr = 600 / 300\n\nStep 3: Simplify the fraction\nTo simplify the ..."
+    },
+    {
+      "problem_id": "phys_modern_01",
+      "domain": "Modern Physics",
+      "subfield": "Quantum",
+      "target": 1.8,
+      "predicted": -31.0,
+      "relative_error": 18.22222222222222,
+      "is_correct": false,
+      "model_response": " Step 1: Convert the given energy of the photon from joules to electron volts.\nTo do this, we need to use the conversion factor between joules and electron volts (J = 1/eV). We can convert 4.5 eV to J by dividing it by 1/36000 (since 1 eV = 1/36000 J):\nK = 4.5 eV / (1/36000) = 4.5 * 36000 eV/J = 162..."
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "benchmark_name": "Resonance-PhysReasoning-v1",
+  "total_problems": 10,
+  "correct": 0,
+  "accuracy": 0.0,
+  "domain_breakdown": {
+    "Electromagnetism": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 4
+    },
+    "Optics": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 2
+    },
+    "Mechanics": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 2
+    },
+    "Thermodynamics": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 1
+    },
+    "Modern Physics": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 1
+    }
+  },
+  "problem_results": [
+    {
+      "problem_id": "phys_circuit_01",
+      "domain": "Electromagnetism",
+      "subfield": "AC Circuits",
+      "target": 796.0,
+      "predicted": 79.0,
+      "relative_error": 0.9007537688442211,
+      "is_correct": false,
+      "model_response": " Step 1: Calculate the angular frequency \u03c9\n\u03c9 = 2\u03c0f\n\nStep 2: Calculate the capacitive reactance X_c\nX_c = 1/(2\u03c0fC)\n\nStep 3: Calculate the inductive reactance X_L\nX_L = 1/(2\u03c0fL)\n\nStep 4: Calculate the total impedance Z\nZ = \u221a(X_L^2 + X_c^2)\n\nStep 5: Calculate the cyclic resonant frequency f_0 using the..."
+    },
+    {
+      "problem_id": "phys_circuit_02",
+      "domain": "Electromagnetism",
+      "subfield": "AC Circuits",
+      "target": 4.0,
+      "predicted": 5.0,
+      "relative_error": 0.25,
+      "is_correct": false,
+      "model_response": " Step 1: Recall the formula for the resonant frequency of an RLC circuit.\nThe resonant frequency f_rms can be calculated using the formula:\nf_rms = 1 / sqrt(\u03c9L)\nwhere \u03c9 = 2\u03c0f and L is the inductance.\n\nStep 2: Calculate the inductance L using the given drive voltage V_rms.\nWe know that V_rms = 0.1 V ..."
+    },
+    {
+      "problem_id": "phys_circuit_03",
+      "domain": "Electromagnetism",
+      "subfield": "AC Circuits",
+      "target": 314.2,
+      "predicted": 0.03,
+      "relative_error": 0.9999045194143859,
+      "is_correct": false,
+      "model_response": " Step 1: Calculate the angular frequency \u03c9\n\u03c9 = 2\u03c0f\n\nStep 2: Calculate the inductive reactance X_L\nX_L = \u03c9L\n\nStep 3: Substitute the given values into the formula for X_L\nX_L = (2\u03c0f)(50 \u00d7 10^-3) = 0.0314 \u03a9\n\nTherefore, the magnitude of the inductive reactance X_L is approximately **0.03** Ohms.\nAnswer:..."
+    },
+    {
+      "problem_id": "phys_circuit_04",
+      "domain": "Electromagnetism",
+      "subfield": "AC Circuits",
+      "target": 2.5,
+      "predicted": 1.78,
+      "relative_error": 0.288,
+      "is_correct": false,
+      "model_response": " Step 1: Calculate the angular frequency \u03c9\n\u03c9 = 2\u03c0f\n\nStep 2: Calculate the impedance Z\nZ = \u221a(R^2 + (\u03c9L)^2)\n\nStep 3: Calculate the quality factor Q using the formula Q = Z/\u221a(R^2 + (\u03c9L)^2)\nQ = Z / \u221a(R^2 + (\u03c9L)^2)\n\nStep 4: Substitute the given values into the formula for Q\nQ = Z / \u221a(R^2 + (\u03c9L)^2) = \u221a((4..."
+    },
+    {
+      "problem_id": "phys_optics_01",
+      "domain": "Optics",
+      "subfield": "Polarization",
+      "target": 25.0,
+      "predicted": 6.0,
+      "relative_error": 0.76,
+      "is_correct": false,
+      "model_response": " Step 1: Understand the given information\n- Unpolarized light (I_0) passes through a first linear polarizer.\n- The first polarizer's orientation is 60 degrees from its axis.\n- An analyzer with a transmission axis oriented at 60 degrees relative to the first polarizer is used.\n- We need to find the t..."
+    },
+    {
+      "problem_id": "phys_optics_02",
+      "domain": "Optics",
+      "subfield": "Interference",
+      "target": 5.0,
+      "predicted": 500.0,
+      "relative_error": 99.0,
+      "is_correct": false,
+      "model_response": " Step 1: Calculate the angular separation between the first and second dark fringes.\nThe angular separation between the first and second dark fringes can be found using the formula:\n\n\u03b8 = (n - 1) * \u03c0 / \u03bb\n\nwhere n is the order of the interference pattern (1 for the first-order pattern), and \u03bb is the w..."
+    },
+    {
+      "problem_id": "phys_mechanics_01",
+      "domain": "Mechanics",
+      "subfield": "Oscillations",
+      "target": 3.18,
+      "predicted": 0.05,
+      "relative_error": 0.9842767295597484,
+      "is_correct": false,
+      "model_response": " Step 1: Recall the formula for the natural oscillation frequency of an ideal spring-mass system.\nThe natural oscillation frequency f is given by the formula:\nf = 1 / sqrt(k/m)\n\nStep 2: Substitute the given values into the formula.\nk = 200 N/m, m = 0.5 kg\nf = 1 / sqrt(200/0.5)\nf = 1 / sqrt(400)\nf = ..."
+    },
+    {
+      "problem_id": "phys_mechanics_02",
+      "domain": "Mechanics",
+      "subfield": "Energy Conservation",
+      "target": 3.96,
+      "predicted": 1.0,
+      "relative_error": 0.7474747474747475,
+      "is_correct": false,
+      "model_response": " Step 1: Identify the given values\n- Mass of the pendulum bob, m = 0.2 kg\n- Initial height, h = 0.8 m\n- Acceleration due to gravity, g = 9.8 m/s^2\n\nStep 2: Use the equation for potential energy\nThe potential energy (PE) of the pendulum bob at the initial position can be calculated using the formula:..."
+    },
+    {
+      "problem_id": "phys_thermo_01",
+      "domain": "Thermodynamics",
+      "subfield": "Heat Engines",
+      "target": 50.0,
+      "predicted": 1.0,
+      "relative_error": 0.98,
+      "is_correct": false,
+      "model_response": " Step 1: Calculate the efficiency of the Carnot engine.\nThe efficiency \u03b7 of a Carnot engine is given by the formula:\n\n\u03b7 = 1 - (T_H / T_C)\n\nStep 2: Substitute the given values into the formula.\n\u03b7 = 1 - (600 K / 300 K)\n\u03b7 = 1 - 2\n\u03b7 = -1\n\nHowever, this result is not possible because an efficiency cannot..."
+    },
+    {
+      "problem_id": "phys_modern_01",
+      "domain": "Modern Physics",
+      "subfield": "Quantum",
+      "target": 1.8,
+      "predicted": -1.8,
+      "relative_error": 2.0,
+      "is_correct": false,
+      "model_response": " Step 1: Convert the given values to consistent units.\n- Work function, Phi = 2.7 eV\n- Energy of incident photon, E = 4.5 eV\n\nStep 2: Calculate the maximum kinetic energy of the emitted photoelectrons using the equation for the maximum kinetic energy in the photoelectric effect:\nK_max = Phi - E\n\nSte..."
+    }
+  ]
+}

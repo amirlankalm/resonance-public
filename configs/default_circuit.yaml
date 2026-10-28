@@ -1,0 +1,25 @@
+# Default Circuit Spectroscopy Environment Configuration
+environment:
+  name: "circuit_spectroscopy"
+  version: "1.0.0"
+  drive_voltage_rms: 0.1
+  band_min_hz: 30.0
+  band_max_hz: 30000.0
+  measurement_budget: 12
+  max_turns: 20
+  query_cost: 0.005
+
+parameters:
+  resistance_range: [20.0, 200.0]
+  inductance_range_mh: [1.0, 100.0]
+  capacitance_range_uf: [0.1, 10.0]
+
+sensor:
+  amplitude_noise_std_A: 0.00005
+  phase_noise_std_rad: 0.03
+  detection_floor_A: 0.00001
+
+scoring:
+  normalization_scale_A: 0.005
+  eval_points: 64
+  eval_spacing: "log"

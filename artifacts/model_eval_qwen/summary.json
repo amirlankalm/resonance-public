@@ -1,0 +1,17 @@
+{
+  "evaluation_status": "archived_exploratory_prototype_v0.1",
+  "note": "Early exploratory prototype trial (n=5 preliminary holdouts) prior to the 50 locked worlds benchmark protocol.",
+  "total_episodes": 5,
+  "mean_reward": 0.3474098070913612,
+  "reward_std": 0.4254903170178874,
+  "mean_nrmse": 0.131475482271597,
+  "mean_brier_score": 0.7600000000000001,
+  "type_classification_accuracy": 0.2,
+  "mean_instrument_calls": 7.2,
+  "mean_turn_steps": 12.4,
+  "failure_counts": {
+    "budget_overrun": 3,
+    "null": 1,
+    "wrong_physics_assumptions": 1
+  }
+}

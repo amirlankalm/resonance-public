@@ -1,0 +1,14 @@
+{
+  "total_episodes": 10,
+  "mean_reward": 0.8295870798395241,
+  "reward_std": 0.29335441395947853,
+  "mean_nrmse": 0.02113503733421478,
+  "mean_brier_score": 2.549012549273396e-17,
+  "type_classification_accuracy": 0.9,
+  "mean_instrument_calls": 11.8,
+  "mean_turn_steps": 14.3,
+  "failure_counts": {
+    "null": 9,
+    "budget_overrun": 1
+  }
+}
