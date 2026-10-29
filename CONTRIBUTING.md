@@ -20,8 +20,8 @@ All contributors and participants are expected to adhere to our [Code of Conduct
 ### 2. Local Setup
 ```bash
 # Clone repository
-git clone https://github.com/amirlankalm/resonance.git
-cd resonance
+git clone https://github.com/amirlankalm/resonance-public.git
+cd resonance-public
 
 # Create and activate virtual environment
 python3 -m venv venv

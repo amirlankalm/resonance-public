@@ -24,7 +24,7 @@ This repository contains the LoRA adapter checkpoint representing the **Supervis
 - **LoRA Hyperparameters:** $r=16$, $\alpha=32$, dropout $=0.05$
 - **Language:** English
 - **License:** Apache-2.0 (compatible with upstream Qwen2.5 base weights)
-- **Repository:** https://github.com/amirlankalm/resonance
+- **Repository:** https://github.com/amirlankalm/resonance-public
 
 ## Training Recipe & Provenance
 
@@ -50,6 +50,6 @@ This repository contains the LoRA adapter checkpoint representing the **Supervis
 ## Evaluation Scope & Findings
 
 Evaluated across 50 locked development worlds ($N=50$, seeds $10000..10049$):
-- **Assisted Track:** Mean terminal reward **$0.4833$** (95% CI `[0.3594, 0.6155]`), type accuracy **$56.0\%$**, conditional NRMSE **$0.0901$** ($28/50$ submissions).
-- **Strict Track:** Mean terminal reward **$-0.0490$**, $0/50$ submissions ($50/50$ budget overruns).
+- **Assisted Track:** Mean terminal reward **$0.4833$** (95% CI `[0.3594, 0.6155]`), type accuracy **$56.0\%$**, conditional NRMSE **$0.0901$** ($28/50$ submissions; all 22 unsubmitted episodes halted early due to the 5-consecutive-invalid-action limit, `stop_reason="invalid_action_limit"`, rather than horizon exhaustion).
+- **Strict Track:** Mean terminal reward **$-0.0490$**, $0/50$ submissions ($49/50$ invalid action limit, $1/50$ turn horizon).
 - **Key Takeaway:** The evaluated LoRA adapter establishes schema discipline and structured probe sampling (yielding a 71.6% valid action rate in assisted mode), providing higher submission completion than the frozen base model. Outcome differences between Pass A and Pass B reflect stochastic rollout variance under identical weights.

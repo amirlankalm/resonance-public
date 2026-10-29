@@ -50,7 +50,7 @@ This document records the exact boundaries, negative findings, and current limit
 
 ## 5. Compute & Training Hardware
 - **Exploratory Prototype Scope:** Initial training experiments were conducted on Apple Silicon (MPS backend) using LoRA ($r=16, \alpha=32$). Full-scale distributed GRPO from scratch using an independent training run, verifiable training manifests, and a held-out test split is under active development.
-- **Weight Hosting:** Because binary weights permanently bloat git repositories, full model checkpoint releases will be migrated to Hugging Face Hub under the `harriot-ai` namespace, preserving SHA-256 manifests in git.
+- **Weight Hosting:** In this public research preview, hosted checkpoint weights are unavailable and not provided. The environment and numerical baselines run locally without hosted weights or external checkpoints; users can train policies locally using `scripts/train_rl.py` or inspect recorded run artifacts and cryptographic manifests in `artifacts/`.
 
 ---
 

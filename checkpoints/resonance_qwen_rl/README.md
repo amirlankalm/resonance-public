@@ -24,7 +24,7 @@ This repository contains the LoRA adapter checkpoint trained using **Group-Relat
 - **LoRA Hyperparameters:** $r=16$, $\alpha=32$, dropout $=0.05$
 - **Language:** English
 - **License:** Apache-2.0 (compatible with upstream Qwen2.5 base weights)
-- **Repository:** https://github.com/amirlankalm/resonance
+- **Repository:** https://github.com/amirlankalm/resonance-public
 
 ## Training Recipe
 
@@ -50,6 +50,6 @@ This repository contains the LoRA adapter checkpoint trained using **Group-Relat
 ## Evaluation Scope & Findings
 
 Evaluated across 50 locked development worlds ($N=50$, seeds $10000..10049$):
-- **Assisted Track:** Mean terminal reward **$0.4024$** (95% CI `[0.2624, 0.5367]`), type accuracy **$46.0\%$**, conditional NRMSE **$0.0330$** on completed episodes ($23/50$ submissions).
-- **Strict Track:** Mean terminal reward **$-0.0480$**, $0/50$ submissions ($50/50$ budget overruns).
-- **Key Takeaway:** In Pass B, completed episodes yielded low parameter estimation error ($0.0330$ conditional NRMSE), but recorded fewer overall submissions ($23/50$) due to probing near the resonance peak past the turn budget. Because Pass A and Pass B share identical adapter weights, this divergence demonstrates rollout trajectory variance rather than a comparative training effect.
+- **Assisted Track:** Mean terminal reward **$0.4024$** (95% CI `[0.2624, 0.5367]`), type accuracy **$46.0\%$**, conditional NRMSE **$0.0330$** on completed episodes ($23/50$ submissions; all 27 unsubmitted episodes halted early due to the 5-consecutive-invalid-action limit, `stop_reason="invalid_action_limit"`, rather than horizon exhaustion).
+- **Strict Track:** Mean terminal reward **$-0.0480$**, $0/50$ submissions ($48/50$ invalid action limit, $2/50$ turn horizon).
+- **Key Takeaway:** In Pass B, completed episodes yielded low parameter estimation error ($0.0330$ conditional NRMSE), but recorded 23/50 submissions as all 27 unsubmitted assisted episodes were halted early by consecutive invalid schema actions (`invalid_action_limit`) rather than exhausting the 20-turn interaction horizon. Because Pass A and Pass B share identical adapter weights, this divergence demonstrates rollout trajectory variance rather than a comparative training effect.

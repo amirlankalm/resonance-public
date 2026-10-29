@@ -5,7 +5,7 @@ authors:
 title: "Resonance: Reinforcement Learning & Active Experimentation Environment for Scientific Physics Reasoning"
 version: 0.1.0
 date-released: 2026-10-27
-url: "https://github.com/amirlankalm/resonance"
+url: "https://github.com/amirlankalm/resonance-public"
 keywords:
   - "reinforcement learning"
   - "physics"

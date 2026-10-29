@@ -6,7 +6,7 @@
 
 # Resonance: Active Experimentation & RL Environment for Scientific Physics Reasoning
 
-[![CI Tests](https://github.com/amirlankalm/resonance/actions/workflows/tests.yml/badge.svg)](https://github.com/amirlankalm/resonance/actions/workflows/tests.yml)
+[![CI Tests](https://github.com/amirlankalm/resonance-public/actions/workflows/tests.yml/badge.svg)](https://github.com/amirlankalm/resonance-public/actions/workflows/tests.yml)
 [![Gymnasium](https://img.shields.io/badge/gymnasium-1.0%2B-blue.svg)]()
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)]()
 [![RAM Adaptation](https://img.shields.io/badge/memory--guard-dynamic%20RAM%20adaptation-blueviolet.svg)]()
@@ -30,6 +30,9 @@ Rather than treating physics as passive text answering or robotics control, Reso
 - It chooses probe conditions (e.g. frequencies, angles) under a strict measurement budget ($q \le 12$ calls).
 - It observes noisy, sensor-degraded responses with detection floors.
 - It must decide *when to stop measuring* and submit both a **hypothesis classification** (model probabilities) and **inferred continuous physical parameters**.
+
+> [!NOTE]
+> **Exploratory Research Preview Scope:** This repository is presented strictly as an exploratory research preview of an environment runtime and evaluation harness. We do not claim that RL improves physics reasoning. Our benchmark evaluations explore small-model behavioral patterns, schema adherence, and baseline numerical bounds under budget constraints.
 
 ### The Core Research Question
 > *At equal measurement and inference budgets, can policy training (SFT / RL) improve model discrimination, parameter estimation, and stopping decisions beyond prompting, supervised learning, and adaptive numerical design?*
@@ -243,7 +246,7 @@ resonance/
 │   ├── PHYSICS.md               # First-principles AC phasor derivations & analytical models
 │   └── REWARD_HACKING.md        # 13 METR-style reward gaming vectors and mathematical defenses
 ├── scripts/
-│   ├── download_checkpoints.py  # Download and verify checkpoint weights from Hugging Face Hub
+│   ├── download_checkpoints.py  # Checkpoint verification / download utility (weights externalized in preview)
 │   ├── prepare_public_repo.py   # Automated public release export and clean-history verification
 │   ├── render_readme_tables.py  # Synchronize headline & master tables from raw artifacts
 │   ├── run_numerical_ladder.py  # Gate B evaluation across budget ladder
@@ -344,8 +347,8 @@ flowchart LR
 
 ### Installation
 ```bash
-git clone https://github.com/amirlankalm/resonance.git
-cd resonance
+git clone https://github.com/amirlankalm/resonance-public.git
+cd resonance-public
 pip install -e .
 ```
 
@@ -374,6 +377,7 @@ python3 scripts/run_numerical_ladder.py
 
 ### 4. Train the Policy Locally (Group-Relative Policy Gradient / GRPO Baseline)
 ```bash
+pip install -e '.[ml]'
 python3 scripts/train_rl.py --sft_samples 30 --grpo_worlds 6 --epochs 2 --device cpu
 ```
 

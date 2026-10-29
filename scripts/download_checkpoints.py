@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Download and verify Resonance model checkpoints from Hugging Face Hub or official mirror.
+"""Download and verify Resonance model checkpoints (research preview: hosted weights unavailable).
 
-This script fetches binary adapter weights into `checkpoints/` and performs
+This script verifies binary adapter weights in `checkpoints/` and performs
 cryptographic SHA-256 integrity checks against committed golden hashes.
+Hosted weights are unavailable in this preview; users train policies locally.
 """
 
 from __future__ import annotations
@@ -89,7 +90,7 @@ def download_checkpoint(ckpt_name: str, target_dir: Path, force: bool = False, t
             return False
     except urllib.error.HTTPError as e:
         if e.code in (401, 403, 404):
-            print(f"[{ckpt_name}] Note: Checkpoint weights at '{cfg['repo_id']}' are currently unavailable in this public research preview (HTTP {e.code}).")
+            print(f"[{ckpt_name}] Note: Checkpoint weights at '{cfg['repo_id']}' are currently unavailable in this public research preview (HTTP {e.code}: repository is private; hosted weights are not provided).")
             print(f"[{ckpt_name}] The Resonance physics environment and numerical baselines run locally without hosted APIs or downloaded checkpoints, after installing runtime dependencies. Training requires the ML extras.")
             print(f"[{ckpt_name}] Manifest checksums can be independently verified via: python3 scripts/verify_checkpoint_identity.py")
             if target_file.exists() and target_file.stat().st_size == 0:
